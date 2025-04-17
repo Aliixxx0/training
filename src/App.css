@@ -7,13 +7,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.header{
+  font-size: calc(200px + 9vmin);
 
-.App-header {
+}
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +22,96 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-fields{
+  margin:10px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Main app container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* Loading indicator */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  font-size: calc(15px + 9vmin);
+  max-width: 400px;
+  margin: 3rem auto;
+}
+
+.input-fields {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-fields:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
 }

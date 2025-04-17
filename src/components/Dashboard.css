@@ -1,0 +1,173 @@
+.dashboard-container {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .dashboard-header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-header h1 {
+    color: #007bff;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logout-button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #e9ecef;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-section h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  /* Course cards for user dashboard */
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-card {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+  }
+  
+  .course-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #212529;
+  }
+  
+  .course-card p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  
+  .course-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .course-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Admin dashboard specific styles */
+  .admin-dashboard .dashboard-section {
+    padding: 20px;
+  }
+  
+  .admin-panel {
+    overflow-x: auto;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .admin-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .admin-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .action-button {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-right: 5px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .action-button.edit,
+  .action-button.view {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .action-button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .action-button:hover {
+    opacity: 0.8;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
